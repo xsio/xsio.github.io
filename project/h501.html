@@ -1,12 +1,37 @@
 <html>
-</body>
+<body>
+<script src="http://cbe.convertlab.com/cbe/collect?tid=1492027403&at=0&h=web"></script>
+<script>
+	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
+	r=r?(r[2]||""):"";
+	clab_tracker.ready(function(){
+	  this.push({pageId:"76ed60fa77b84380a97e5eb643642e31",testId:r});
+	  this.track("open_page",{targetId:"76ed60fa77b84380a97e5eb643642e31"});
+	})
+</script>  
+<script type="text/javascript" src="http://host.convertlab.com/js/clpage1.0.0.js"></script>
+<script 
+function link1_click(){
+  if(_cl_tracker){_cl_tracker.track("c_1469124025709","链接1","id_1469124025709");}
+};
+
+function link2_click(){
+  if(_cl_tracker){_cl_tracker.track("c_1469124054178","链接2","id_1469124054178");}
+};
+
+function link3_click(){
+  if(_cl_tracker){_cl_tracker.track("c_1469124075293","链接3","id_1469124075293");}
+};
+
+</script>
+  
 hello world!
 
-<a href="#">链接1</a>
+<a href="#" onclick="link1_click()">链接1</a>
 
-<a href="#">链接2</a>
+<a href="#" onclick="link2_click()">链接2</a>
 
-<a href="#">链接3</a>
+<a href="#" onclick="link3_click()">链接3</a>
 
 </body>
 </html>
