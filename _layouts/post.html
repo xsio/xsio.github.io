@@ -29,6 +29,56 @@ layout: default
 	  this.track("open_page",{targetId:"1d02d8259733452ab2a2e4a8bc7a71c1"});
 	})
 </script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="http://host.convertlab.com/js/clpage1.0.0.js"></script>
+<script>
+wx.config({
+  debug: false,
+  appId: {appid},
+  timestamp: {timestamp},
+  nonceStr: {nonceStr},
+  signature: {signature},
+  jsApiList: [
+  'checkJsApi',
+  'onMenuShareTimeline',
+  'onMenuShareAppMessage'
+  ]
+  });
+  wx.ready(function(){
+  wx.onMenuShareAppMessage({
+   title: window.clShareTitle,
+   desc: window.clShareSummary,
+   link: window.sessionShareUrl, 
+   imgUrl: window.clShareImage,
+   trigger: function (res) {
+   },
+   success: function (res) {
+    window.onShareToSession();
+   },
+   cancel: function (res) {
+   },
+   fail: function (res) {
+   alert(JSON.stringify(res));
+   }
+   });
+   wx.onMenuShareTimeline({
+  title: window.clShareTitle,
+   desc: window.clShareSummary,
+  link: window.timelineShareUrl, 
+  imgUrl: window.clShareImage,
+   trigger: function (res) {
+   },
+   success: function (res) {
+     window.onShareToTimeline();
+   },
+   cancel: function (res) {
+   },
+   fail: function (res) {
+   alert(JSON.stringify(res));
+   }
+   });
+ 	});
+</script>
 <script>
 	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1470894319649","action1","id_1470894319649");}}
 	function trick2(){if(_cl_tracker){_cl_tracker.track("c_1470894363682","action2","id_1470894363682");}}
