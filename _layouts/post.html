@@ -17,9 +17,24 @@ layout: default
     <div class="entry">
         <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
         <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
-        <p>行为一</p>
-        <p>行为二</p>
-        <p>行为三</p>
+        <p onclick="trick1()">行为一</p>
+        <p onclick="trick2()">行为二</p>
+        <p onclick="trick3()">行为三</p>
+        <script src="http://cbe.51convert.cn/cbe/collect?tid=1734229266&at=0&h=web"></script>
+<script>
+	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
+	r=r?(r[2]||""):"";
+	clab_tracker.ready(function(){
+	  this.push({pageId:"1d02d8259733452ab2a2e4a8bc7a71c1",testId:r});
+	  this.track("open_page",{targetId:"1d02d8259733452ab2a2e4a8bc7a71c1"});
+	})
+</script>
+<script>
+	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1470894319649","action1","id_1470894319649");}}
+	function trick2(){if(_cl_tracker){_cl_tracker.track("c_1470894363682","action2","id_1470894363682");}}
+	function trick3(){if(_cl_tracker){_cl_tracker.track("c_1470894384688","action3","id_1470894384688");}}
+</script>
+
         {{ content }}
         <!--<form id="clForm" data-cl-attached="true" data-cl-id="8c15e5ea915540f29e8bf7361f6ede05" action="http://host.convertlab.com/page/8c15e5ea915540f29e8bf7361f6ede05" method="POST"></form>-->
 <!--<form id="clForm" data-cl-attached="true" data-cl-id="cec17167ddc04d98b90bc45010c56032" action="http://host.51convert.cn/form/cec17167ddc04d98b90bc45010c56032" method="POST"></form>
