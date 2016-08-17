@@ -20,69 +20,20 @@ layout: default
         <p onclick="trick1()">行为一</p>
         <p onclick="trick2()">行为二</p>
         <p onclick="trick3()">行为三</p>
-        <script src="http://cbe.51convert.cn/cbe/collect?tid=1734229266&at=0&h=web"></script>
+        <script src="http://cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
 <script>
 	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
 	r=r?(r[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"1d02d8259733452ab2a2e4a8bc7a71c1",testId:r});
-	  this.track("open_page",{targetId:"1d02d8259733452ab2a2e4a8bc7a71c1"});
+	  this.push({pageId:"cf8c51abad1742ecb40331632272840e",testId:r});
+	  this.track("open_page",{targetId:"cf8c51abad1742ecb40331632272840e"});
 	})
 </script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script type="text/javascript" src="http://host.convertlab.com/js/clpage1.0.0.js"></script>
+
 <script>
-wx.config({
-  debug: false,
-  appId: wxf7d4f8be8d6261a0,
-  timestamp: 1470926190,
-  nonceStr: 9a5f4eb2-3e43-4f7d-8dcb-e1071ff9cb0f,
-  signature: 1b35e86be29c9366377a15c8f62c3f5124196da7,
-  jsApiList: [
-  'checkJsApi',
-  'onMenuShareTimeline',
-  'onMenuShareAppMessage'
-  ]
-  });
-  wx.ready(function(){
-  wx.onMenuShareAppMessage({
-   title: window.clShareTitle,
-   desc: window.clShareSummary,
-   link: window.sessionShareUrl, 
-   imgUrl: window.clShareImage,
-   trigger: function (res) {
-   },
-   success: function (res) {
-    window.onShareToSession();
-   },
-   cancel: function (res) {
-   },
-   fail: function (res) {
-   alert(JSON.stringify(res));
-   }
-   });
-   wx.onMenuShareTimeline({
-  title: window.clShareTitle,
-   desc: window.clShareSummary,
-  link: window.timelineShareUrl, 
-  imgUrl: window.clShareImage,
-   trigger: function (res) {
-   },
-   success: function (res) {
-     window.onShareToTimeline();
-   },
-   cancel: function (res) {
-   },
-   fail: function (res) {
-   alert(JSON.stringify(res));
-   }
-   });
- 	});
-</script>
-<script>
-	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1470894319649","action1","id_1470894319649");}}
-	function trick2(){if(_cl_tracker){_cl_tracker.track("c_1470894363682","action2","id_1470894363682");}}
-	function trick3(){if(_cl_tracker){_cl_tracker.track("c_1470894384688","action3","id_1470894384688");}}
+	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1471331771674","action1","id_1471331771674");}}
+	function trick2(){if(_cl_tracker){_cl_tracker.track("c_1471331796961","action2","id_1471331796961");}}
+	function trick3(){if(_cl_tracker){_cl_tracker.track("c_1471331819558","action3","id_1471331819558");}}
 </script>
 
         {{ content }}
