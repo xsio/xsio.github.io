@@ -57,16 +57,10 @@ layout: default
 	_clForm.loadForm("http://host.convertwork.cn", "d28b2b2971c547b88d69796f107ff2e4",{
 		formInit: function(){},
 		beforeSubmit: function(){},
-		onSubmit: function(args){}
+		onSubmit: function(args){
+			_cl_tracker.track("submit_form",{targetId:"d28b2b2971c547b88d69796f107ff2e4"});
+		}
 	});
-</script>
-<script>
-	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
-	r=r?(r[2]||""):"";
-	clab_tracker.ready(function(){
-	  this.push({pageId:"d28b2b2971c547b88d69796f107ff2e4",testId:r});
-	  this.track("submit_form",{targetId:"d28b2b2971c547b88d69796f107ff2e4"});
-	})
 </script>
         
     </div>
