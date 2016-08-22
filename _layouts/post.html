@@ -19,9 +19,8 @@ layout: default
         <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
         
         <!--convertwork H5-->
-        <p onclick="trick1()">行为一</p>
-        <p onclick="trick2()">行为二</p>
-        <p onclick="trick3()">行为三</p>
+        <p><a onclick="trick1()">开始游戏</a>&nbsp;&nbsp;<a onclick="trick2()">开始交朋友（游戏进行中）</a>&nbsp;&nbsp;<a onclick="trick3()">分享（游戏结束）</a></p>
+        <p><a onclick="trick4()">游戏结束</a>&nbsp;&nbsp;<a onclick="trick5()">还要交朋友（定制结束）</a>&nbsp;&nbsp;<a onclick="trick6()">还要分享（定制结束）</a></p>
         <script src="http://cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
 <script>
 	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
