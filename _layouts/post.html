@@ -16,7 +16,19 @@ layout: default
 <script>
 	function onSubmit(){
 		
-		alert($);
+		$.ajax({
+		  type: "GET",
+		  dataType: "json",
+		  url: "http://host.51convert.cn/formdata/get/f287c6b6292a4f1f893e58c0fe15eba0",
+		  success: function(data){
+		    $.ajax({
+		      type: "POST",
+		      url: "http://host.51convert.cn/form/f287c6b6292a4f1f893e58c0fe15eba0?cltoken="+data.token,
+		      data: $("#myform").serialize()
+		    });
+		  }
+		});
+		
 	}
 	
 </script>
