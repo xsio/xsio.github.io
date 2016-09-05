@@ -89,7 +89,10 @@ layout: default
 	_clForm.loadForm("http://host.convertwork.cn", "46c95afd652042f5bb95fdccbe789393",{
 		formInit: function(){},
 		beforeSubmit: function(){},
-		onSubmit: function(args){}
+		onSubmit: function(args){
+			_cl_tracker.track("submit_form",{targetId:"46c95afd652042f5bb95fdccbe789393"});
+			
+		}
 	});
 </script>
         
