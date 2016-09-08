@@ -16,11 +16,12 @@
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"1e4faf3b7656402090c5deb836aca84b",testId:r});
+	  this.push({pageId:"1e4faf3b7656402090c5deb836aca84b",appType:"redirect",testId:r});
 	  if(c)return;
-	  this.track("open_page",{targetId:"1e4faf3b7656402090c5deb836aca84b"});
+	  this.track("open_app",{targetId:"1e4faf3b7656402090c5deb836aca84b"});
 	})
 </script>
+
 
 <script>
 	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1472633924477","起床","id_1472633924477");}}
