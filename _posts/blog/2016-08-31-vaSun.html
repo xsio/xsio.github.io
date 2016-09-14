@@ -17,21 +17,20 @@
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"d4dd2e34ef8943b4abd644d7eec462aa",testId:r});
+	  this.push({pageId:"d4dd2e34ef8943b4abd644d7eec462aa",appType:"redirect",testId:r});
 	  if(c)return;
-	  this.track("open_page",{targetId:"d4dd2e34ef8943b4abd644d7eec462aa"});
+	  this.track("open_app",{targetId:"d4dd2e34ef8943b4abd644d7eec462aa"});
 	})
 </script>
-
 <script>
-	function trick1(){if(_cl_tracker){_cl_tracker.track("c_1473050010779","起床","id_1473050010779");}}
-	function trick2(){if(_cl_tracker){_cl_tracker.track("c_1473050025562","吃早餐","id_1473050025562");}}
-	function trick3(){if(_cl_tracker){_cl_tracker.track("c_1473050036801","锻炼","id_1473050036801");}}
-	function trick4(){if(_cl_tracker){_cl_tracker.track("c_1473050052105","阅读","id_1473050052105");}}
-	function trick5(){if(_cl_tracker){_cl_tracker.track("c_1473050064801","购物","id_1473050064801");}}
-	function trick6(){if(_cl_tracker){_cl_tracker.track("c_1473050080474","工作中","id_1473050080474");}}
-	function trick7(){if(_cl_tracker){_cl_tracker.track("c_1473050096769","工作结束","id_1473050096769");}}
-	function trick8(){if(_cl_tracker){_cl_tracker.track("c_1473050114362","晚餐时间到","id_1473050114362");}}
-	function trick9(){if(_cl_tracker){_cl_tracker.track("c_1473050125762","锻炼中 ","id_1473050125762");}}
-	function trick10(){if(_cl_tracker){_cl_tracker.track("c_1473050140193","一天结束","id_1473050140193");}}
+	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","起床","id_1473050010779");}}
+	function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","吃早餐","id_1473050025562");}}
+	function trick3(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","锻炼","id_1473050036801");}}
+	function trick4(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","阅读","id_1473050052105");}}
+	function trick5(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","购物","id_1473050064801");}}
+	function trick6(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","工作中","id_1473050080474");}}
+	function trick7(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","工作结束","id_1473050096769");}}
+	function trick8(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","晚餐时间到","id_1473050114362");}}
+	function trick9(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","锻炼中 ","id_1473050125762");}}
+	function trick10(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","一天结束","id_1473050140193");}}
 </script>
