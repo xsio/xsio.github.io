@@ -7,3 +7,32 @@
 <p><a onclick="trick5()">行为五</a>&nbsp;&nbsp;<a onclick="trick6()">行为六</a></p>
 <p><a onclick="trick7()">行为七</a>&nbsp;&nbsp;<a onclick="trick8()">行为八</a></p>
 <p><a onclick="trick9()">行为九</a>&nbsp;&nbsp;<a onclick="trick10()">行为十</a></p>
+
+
+
+<script src="http://cbe.convertlab.com/cbe/collect?tid=740843171&at=0&h=web"></script>
+<script>
+	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
+	r=r?(r[2]||""):"";
+	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
+	c=c?(c[2]||""):"";
+	clab_tracker.ready(function(){
+	  this.push({pageId:"1b564ddc0fcb407ca94efed35353f4d2",appType:"redirect",testId:r});
+	  if(c)return;
+	  this.track("open_app",{targetId:"1b564ddc0fcb407ca94efed35353f4d2"});
+	})
+</script>
+
+
+<script>
+	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","这是第一个行为一","id_1474382296178");}}
+	function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","请注意这是行为二","id_1474382336691");}}
+	function trick3(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","行为三","id_1474382394998");}}
+	function trick4(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","行为四","id_1474382459787");}}
+	function trick5(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","这是第五种行为","id_1474382492755");}}
+	function trick6(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","这是第六种行为","id_1474382527069");}}
+	function trick7(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","这是第七种行为","id_1474382559098");}}
+	function trick8(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","这是第八种行为","id_1474382591657");}}
+	function trick9(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","行为九","id_1474382622723");}}
+	function trick10(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","行为十","id_1474382642867");}}
+</script>
