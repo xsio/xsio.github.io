@@ -16,7 +16,7 @@
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"1e4faf3b7656402090c5deb836aca84b",appType:"redirect",eventGroup:"app",testId:r});
+	  this.push({pageId:"1e4faf3b7656402090c5deb836aca84b",appType:"redirect",testId:r});
 	  if(c)return;
 	  this.track("open_app",{targetId:"1e4faf3b7656402090c5deb836aca84b"});
 	})
