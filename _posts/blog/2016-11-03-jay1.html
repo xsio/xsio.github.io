@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>H5页面</title>
+</head>
+<body>
+<p><a onclick="trick1()" href=#>起床</a>&nbsp;&nbsp;<a onclick="trick2()" href=#>吃早餐</a></p>
+<p><a onclick="trick3()" href=#>锻炼</a>&nbsp;&nbsp;<a onclick="trick4()" href=#>阅读</a></p>
+<p><a onclick="trick5()" href=#>购物</a>&nbsp;&nbsp;<a onclick="trick6()" href=#>工作中</a></p>
+<p><a onclick="trick7()" href=#>工作结束</a>&nbsp;&nbsp;<a onclick="trick8()" href=#>晚餐时间到</a></p>
+<p><a onclick="trick9()" href=#>锻炼中</a>&nbsp;&nbsp;<a onclick="trick10()" href=#>一天结束</a></p>
+</body>
+<html>
+
+<script src="http://cbe.convertlab.com/cbe/collect?tid=412338416&at=0&h=web"></script>
+<script>
+	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
+	r=r?(r[2]||""):"";
+	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
+	c=c?(c[2]||""):"";
+	clab_tracker.ready(function(){
+	  this.push({pageId:"549ea1564d70478e9e449250957d64d4",appType:"redirect",testId:r});
+	  if(c)return;
+	  this.track("open_app",{targetId:"549ea1564d70478e9e449250957d64d4"});
+	})
+</script>
+  
+  <script>
+	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","我要开户","id_1478228420746");}}
+</script>
