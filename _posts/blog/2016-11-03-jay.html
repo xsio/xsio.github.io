@@ -24,3 +24,55 @@
 <script>
 	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","我要开户","id_1478228420746");}}
 </script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript" src="http://host.convertlab.com/js/clpage1.0.0.js"></script>
+<script>
+clReady(function(){
+ 	wx.config({
+  debug: false,
+  appId: {appid},
+  timestamp: {timestamp},
+  nonceStr: {nonceStr},
+  signature: {signature},
+  jsApiList: [
+  'checkJsApi',
+  'onMenuShareTimeline',
+  'onMenuShareAppMessage'
+  ]
+  });
+  wx.ready(function(){
+  wx.onMenuShareAppMessage({
+   title: window.clShareTitle,
+   desc: window.clShareSummary,
+   link: window.sessionShareUrl, 
+   imgUrl: window.clShareImage,
+   trigger: function (res) {
+   },
+   success: function (res) {
+    window.onShareToSession();
+   },
+   cancel: function (res) {
+   },
+   fail: function (res) {
+   alert(JSON.stringify(res));
+   }
+   });
+   wx.onMenuShareTimeline({
+  title: window.clShareTitle,
+   desc: window.clShareSummary,
+  link: window.timelineShareUrl, 
+  imgUrl: window.clShareImage,
+   trigger: function (res) {
+   },
+   success: function (res) {
+     window.onShareToTimeline();
+   },
+   cancel: function (res) {
+   },
+   fail: function (res) {
+   alert(JSON.stringify(res));
+   }
+   });
+ 	});
+});
+</script>
