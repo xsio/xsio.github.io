@@ -3,76 +3,32 @@
 <title>H5页面</title>
 </head>
 <body style="background-color:#e8b66e">
-<script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=zmFb2nwg"> </script>
 	
-<p style="text-align: center;margin-top: 30%"><button type="button" style="width: 100px;height: 50px;font-size: 16px;border-radius: 9px;background: white;" onclick="trick1()" href=#>我要开户</button></p>
+<p style="text-align: center;margin-top: 30%">
+	<button type="button" style="width: 100px;height: 50px;font-size: 16px;border-radius: 9px;background: white;" onclick="trick1()" href=#>我要开户</button>
+	</p>
+<p style="text-align: center;margin-top: 30%">
+	<button type="button" style="width: 100px;height: 50px;font-size: 16px;border-radius: 9px;background: white;" onclick="trick2()" href=#>上传资料</button>
+	</p>
+
 </body>
+	
 <html>
 
-<script src="http://cbe.convertlab.com/cbe/collect?tid=412338416&at=0&h=web"></script>
+<script src="http://cbe.convertlab.com/cbe/collect?tid=740843171&at=0&h=web"></script>
 <script>
 	var r=window.location.search.substr(1).match(new RegExp("(^|&)cl_testid=([^&]*)(&|$)", "i"));
 	r=r?(r[2]||""):"";
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"549ea1564d70478e9e449250957d64d4",appType:"redirect",testId:r});
+	  this.push({pageId:"cfe50f0dcd53442ea3272e9a7b8e8ad8",appType:"redirect",testId:r});
 	  if(c)return;
-	  this.track("open_app",{targetId:"549ea1564d70478e9e449250957d64d4"});
+	  this.track("open_app",{targetId:"cfe50f0dcd53442ea3272e9a7b8e8ad8"});
 	})
 </script>
 <script>
-	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","我要开户","id_1478228420746");}}
+	function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","我要开户","id_1479785681539");}}
+	function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","上传资料","id_1479786290407");}}
 </script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<script type="text/javascript" src="http://host.convertlab.com/js/clpage1.0.0.js"></script>
-<script>
-clReady(function(){
- 	wx.config({
-  debug: false,
-  appId: {appid},
-  timestamp: {timestamp},
-  nonceStr: {nonceStr},
-  signature: {signature},
-  jsApiList: [
-  'checkJsApi',
-  'onMenuShareTimeline',
-  'onMenuShareAppMessage'
-  ]
-  });
-  wx.ready(function(){
-  wx.onMenuShareAppMessage({
-   title: window.clShareTitle,
-   desc: window.clShareSummary,
-   link: window.sessionShareUrl, 
-   imgUrl: window.clShareImage,
-   trigger: function (res) {
-   },
-   success: function (res) {
-    window.onShareToSession();
-   },
-   cancel: function (res) {
-   },
-   fail: function (res) {
-   alert(JSON.stringify(res));
-   }
-   });
-   wx.onMenuShareTimeline({
-  title: window.clShareTitle,
-   desc: window.clShareSummary,
-  link: window.timelineShareUrl, 
-  imgUrl: window.clShareImage,
-   trigger: function (res) {
-   },
-   success: function (res) {
-     window.onShareToTimeline();
-   },
-   cancel: function (res) {
-   },
-   fail: function (res) {
-   alert(JSON.stringify(res));
-   }
-   });
- 	});
-});
-</script>
+
