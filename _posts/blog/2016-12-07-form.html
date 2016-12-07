@@ -10,8 +10,17 @@
 _clForm.loadForm("http://host.convertlab.com", "31e0f8dacc4d4302ad203107bc21b122",{
 	formInit: function(){},
 	beforeSubmit: function(){},
-	onSubmit: function(args){}
+	onSubmit: function(args){
+		_cl_tracker.track("submit_form",{targetId:"31e0f8dacc4d4302ad203107bc21b122"});
+	}
 });
 </script>
 </body>
-<html>
+<script src="http://cbe.convertlab.com/cbe/collect?tid=953094491&at=0&h=web"></script>
+<script>
+	clab_tracker.ready(function(){
+		this.push({});
+		this.track("open_page",{});
+	})
+</script>
+</html>
