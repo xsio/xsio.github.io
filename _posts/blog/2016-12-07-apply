@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>黑卡申请</title>
+</head>
+<body style="background-color:#9d9d9d">
+<script id="fiboDataSDK" type="text/javascript" src="http://sdk.fibodata.com/data/datasdk.min.js?pfid=fiboUser&appid=zmFb2nwg"> </script>
+<p style="text-align: center;font-size: 12px;font-color: #ffffff">环球黑卡</p>	
+<p style="text-align: center;margin-top: 30%"><button type="button" style="width: 100px;height: 50px;font-size: 16px;border-radius: 9px;background: white;" onclick="trick1()" href=#>立即申请</button></p>
+</body>
+<html>
