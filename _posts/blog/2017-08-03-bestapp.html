@@ -13,10 +13,32 @@
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
       clab_tracker.ready(function(){
-           this.push({pageId:"4e28e07adf1f4ff4b2b39aa8e83409ac"});
-           this.track("open_app",{targetId:"4e28e07adf1f4ff4b2b39aa8e83409ac",appType:"redirect",testId:r});
-	   if(c)return;
-	       this.track("open_app",{targetId:"4e28e07adf1f4ff4b2b39aa8e83409ac"});
+  this.push({pageId:"4e28e07adf1f4ff4b2b39aa8e83409ac", channelType: "wechat", userId: o_dCRt4K-Tzp6oAZL2bFEhqB7rYA});
+  this.track("open_app",{targetId:"4e28e07adf1f4ff4b2b39aa8e83409ac"});
+})
+	      if (clab_tracker) {
+  clab_tracker.track("share_to_wechat_friends",
+    "{一个简单的测试}",
+    "4e28e07adf1f4ff4b2b39aa8e83409ac",
+    {
+      channelType: "wechat",
+      channelName: "{淘礼满天}",
+      userId: o_dCRt4K-Tzp6oAZL2bFEhqB7rYA
+,
+      pageId: "4e28e07adf1f4ff4b2b39aa8e83409ac"
+    });
+}
+	      if (clab_tracker) {
+  clab_tracker.track("share_to_wechat_timeline",
+    "{一个简单的测试}",
+    "4e28e07adf1f4ff4b2b39aa8e83409ac",
+    {
+      channelType: "wechat",
+      channelName: "{淘礼满天}",
+      userId: o_dCRt4K-Tzp6oAZL2bFEhqB7rYA,
+      pageId: "4e28e07adf1f4ff4b2b39aa8e83409ac"
+    });
+}
 });
 	
 </script>
