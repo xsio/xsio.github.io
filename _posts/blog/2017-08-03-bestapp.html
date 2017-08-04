@@ -3,9 +3,7 @@
 <title>nick测试</title>
 </head>
 <body> 
-<p><a onclick="trick1()" href=#>起床</a>&nbsp;&nbsp;<a onclick="trick2()" href=#>吃早餐</a></p>
-<p><a onclick="trick3()" href=#>工作中</a>&nbsp;&nbsp;<a onclick="trick4()" href=#>工作结束</a></p>
-<p><a onclick="trick5()" href=#>晚餐时间到</a>&nbsp;&nbsp;<a onclick="trick6()" href=#>一天结束</a></p>
+<p><a onclick="trick1()" href=#>起床</a>&nbsp;&nbsp;<a onclick="trick2()" href=#>2</a></p>
 </body>
 <script src="http://cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
 
@@ -14,19 +12,17 @@
 	r=r?(r[2]||""):"";
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
-  clab_tracker.ready(function(){
-  this.push({pageId:"c252b0b1ee8a4c688edd0ff7f8d73063", appType:"redirect",testId:r});
-  this.track("open_app",{targetId:"c252b0b1ee8a4c688edd0ff7f8d73063"});
-})
+      clab_tracker.ready(function(){
+           this.push({pageId:"4e28e07adf1f4ff4b2b39aa8e83409ac"});
+           this.track("open_app",{targetId:"4e28e07adf1f4ff4b2b39aa8e83409ac",appType:"redirect",testId:r});
+	   if(c)return;
+	       this.track("open_app",{targetId:"4e28e07adf1f4ff4b2b39aa8e83409ac"});
+});
 	
 </script>
 
 <script>
-function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","起床","id_1501754529119");}}
-function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","吃早餐","id_1501754549952");}}
-function trick3(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","工作中","id_1501754610784");}}
-function trick4(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","工作结束","id_1501754627305");}}
-function trick5(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","晚餐时间到","id_1501754648307");}}
-function trick6(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","一天结束","id_1501754689879");}}
+    function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","起床","id_1501754529119");}}
+    function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","2","id_1501754549952");}}
 </script>
 </html>
