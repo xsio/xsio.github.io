@@ -15,9 +15,24 @@
 	r=r?(r[2]||""):"";
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
-	clab_tracker.ready(function(){
+	
+  clab_tracker.ready(function(){
   this.push({pageId:"6ecf238f45d84dd6b6ada56724470c59", identityType: "wechat", identityValue: openId});
   this.track("open_app",{targetId:"6ecf238f45d84dd6b6ada56724470c59"});})
+	
+	
+if (clab_tracker) {
+  clab_tracker.track("share_to_wechat_friends",
+    "{H5名称}",
+    "6ecf238f45d84dd6b6ada56724470c59",
+    {
+      identityType: "wechat",
+      channelName: "{淘礼满天}",
+      identityValue: openId,
+      pageId: "6ecf238f45d84dd6b6ada56724470c59"
+    });
+}
+
 </script>
 
 <script>
