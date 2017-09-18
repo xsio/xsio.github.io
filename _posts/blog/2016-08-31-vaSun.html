@@ -16,9 +16,8 @@
 	var c=window.location.search.substr(1).match(new RegExp("(^|&)cl_ignore=([^&]*)(&|$)", "i"));
 	c=c?(c[2]||""):"";
 	clab_tracker.ready(function(){
-	  this.push({pageId:"d4dd2e34ef8943b4abd644d7eec462aa",appType:"redirect",testId:r});
-	  this.track("open_app",{targetId:"d4dd2e34ef8943b4abd644d7eec462aa"});
-	})
+  this.push({pageId:"6ecf238f45d84dd6b6ada56724470c59", identityType: "wechat", identityValue: openId});
+  this.track("open_app",{targetId:"6ecf238f45d84dd6b6ada56724470c59"});})
 </script>
 
 <script>
