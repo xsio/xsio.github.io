@@ -62,9 +62,17 @@
             </section>
             <section data-reactid="22">
                
-                <form id="clForm" data-cl-attached="false" method="POST" class="form" data-reactid="24"
-                      action="https://host.convertlab.com/form/4a48dbfe8e1d49ab87715d2ed8e6e79d">
-                     
+		<!--嵌入式表单-->
+                <form id="clForm" data-cl-attached="true" data-cl-id="032d70f546dc4c02b731fce0adcef2ff" action="http://host.convertlab.com/form/032d70f546dc4c02b731fce0adcef2ff" method="POST"></form>
+                <script type="text/javascript" src="http://host.convertlab.com/js/forms/form.js"></script>
+		    <script>
+			    _clForm.loadForm("http://host.convertlab.com", "032d70f546dc4c02b731fce0adcef2ff",{
+				    formInit: function(){},
+				    beforeSubmit: function(){},
+				    onSubmit: function(args){}
+			    });
+		    </script>  
+		    
                     <div class="label-input" data-reactid="25">
                     <span class="label required" data-reactid="26">姓名:</span>
                     <input type="text" class="input normal" name="name" id="name" data-reactid="27">
@@ -198,13 +206,14 @@
 </div>
 <div id="layer">
 </div>
-     <script src="//cbe.convertlab.com/cbe/collect?tid=1238467299&at=0&h=web"></script>
+      <!--网站追踪代码-->
+      <script src="//cbe.convertlab.com/cbe/collect?tid=3719579665201634334&at=0&h=web"></script>
       <script>
         clab_tracker.ready(function(){
-          this.push({});
+          this.push({"pageType":"web"});
           this.track("open_page", {});
           
-          $.getJSON("https://host.convertlab.com/formdata/get/4a48dbfe8e1d49ab87715d2ed8e6e79d",
+          $.getJSON("https://host.convertlab.com/formdata/get/032d70f546dc4c02b731fce0adcef2ff",
 	      function(json){
 	        $("#cltoken").val(json.token);
 	      });
@@ -388,7 +397,7 @@
 	    $.ajax({
          cache: true,
          type: "POST",
-         url:"https://host.convertlab.com/form/4a48dbfe8e1d49ab87715d2ed8e6e79d",
+         url:"https://host.convertlab.com/form/032d70f546dc4c02b731fce0adcef2ff",
          data:$('#clForm').serialize(),
          async: false,
          success: function(data){
@@ -419,7 +428,7 @@
    $("#validationCode").click(function(){
     var mobile = $("#clMobileField").val();
     var reg = /^1[0-9]{10}$/;
-    var uuid = '4a48dbfe8e1d49ab87715d2ed8e6e79d';
+    var uuid = '032d70f546dc4c02b731fce0adcef2ff';
     if(reg.test(mobile)){
         $.ajax({
             cache : false,
