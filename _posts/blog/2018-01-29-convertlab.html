@@ -22,7 +22,7 @@
           ga('send', 'pageview');
         </script>
         <script type="text/javascript" src="https://hm.baidu.com/hm.js?f039e7b9ae45de69f8a695acea6993ee"></script>
-        <script type="text/javascript" src="//cbe.convertlab.com/cbe/collect?tid=1238467299&at=0&h=web"></script>
+        <script type="text/javascript" src="//cbe.convertlab.com/cbe/collect?tid=3719579665201634334&at=0&h=web"></script>
 
 
 </head>
@@ -181,8 +181,17 @@
 
         <section class="try-now">
                 <div class="title row">立即申请免费试用</div>
-                <form id="clForm" data-cl-attached="false" 
-                      action="https://host.convertlab.com/form/4a48dbfe8e1d49ab87715d2ed8e6e79d" method="POST">
+		
+		<!--嵌入式表单代码-->
+                <form id="clForm" data-cl-attached="true" data-cl-id="032d70f546dc4c02b731fce0adcef2ff" action="http://host.convertlab.com/form/032d70f546dc4c02b731fce0adcef2ff" method="POST"></form>
+<script type="text/javascript" src="http://host.convertlab.com/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("http://host.convertlab.com", "032d70f546dc4c02b731fce0adcef2ff",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
                     <div class="input-group">
                     <input style="visibility:hidden;position:absolute;" name="name390" data-reactid="238"/>
                     <div class="label-input">
@@ -231,7 +240,7 @@
 		    }
    	  
 	      $.ajaxSettings.async = false; //设置getJson同步
-	      $.getJSON("https://host.convertlab.com/formdata/get/4a48dbfe8e1d49ab87715d2ed8e6e79d",
+	      $.getJSON("https://host.convertlab.com/formdata/get/032d70f546dc4c02b731fce0adcef2ff",
 	      function(json){
 	        $("#cltoken").val(json.token);
 	      });
@@ -358,7 +367,7 @@
                             </label>
                             </div>
 	     <div id="_cl_qrcode" style="width:200px"></div>
-	        <script src="//cbe.convertlab.com/cbe/collect?tid=1238467299&at=0&h=web"></script>
+	        <script src="//cbe.convertlab.com/cbe/collect?tid=3719579665201634334&at=0&h=web"></script>
          <script>
             (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//host.convertlab.com/qrcode/binding","fa8d77f249124aa6842a639423546f98","1238467299","_cl_qrcode");
 </script>
@@ -383,10 +392,11 @@
         </footer>    </div>
 </div>
 
-      <script src="//cbe.convertlab.com/cbe/collect?tid=1238467299&at=0&h=web"></script>
+      <!--网站追踪代码-->
+      <script src="//cbe.convertlab.com/cbe/collect?tid=3719579665201634334&at=0&h=web"></script>
       <script>
         clab_tracker.ready(function(){
-          this.push({});
+          this.push({"pageType":"web"});
           this.track("open_page", {});
         });
       </script>
