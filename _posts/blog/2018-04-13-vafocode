@@ -1,0 +1,31 @@
+<!-- validation环境 新功能公司网站页面 -->
+<html>
+<head>
+<title>重构页面validation</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff">新功能validation页面</p>
+
+<form id="clForm" data-cl-attached="true" data-cl-id="3d8e3384f4474a29b367812a936c600f" action="http://host.convertwork.cn/form/3d8e3384f4474a29b367812a936c600f" method="POST"></form>
+<script type="text/javascript" src="http://host.convertwork.cn/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("http://host.convertwork.cn", "3d8e3384f4474a29b367812a936c600f",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
+<div id="_cl_qrcode" style="width:200px"></div>
+      <script>
+        (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//host.convertwork.cn/qrcode/binding","8471f6d85d494787813789eb1b4143bc","1238467299","_cl_qrcode");
+      </script>
+  
+</body>
+<script src="//cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+      </script>
+</html>
