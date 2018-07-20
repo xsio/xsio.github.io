@@ -1,0 +1,28 @@
+<!-- validation环境 公司网站页面 by-hh -->
+<html>
+<head>
+<title>pageA validation</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff">pageA validation</p>
+<form id="clForm" data-cl-attached="true" data-cl-id="84aa3cf95b8c4416aab9e0e44a5382c8" action="http://hostaz.xiaoshu.biz/form/84aa3cf95b8c4416aab9e0e44a5382c8" method="POST"></form>
+<script type="text/javascript" src="http://hostaz.xiaoshu.biz/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("http://hostaz.xiaoshu.biz", "84aa3cf95b8c4416aab9e0e44a5382c8",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
+
+</body>          
+   
+      <script src="//cbeaz.xiaoshu.biz/cbe/collect?tid=1734229266&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+      </script>
+    
+</html>
