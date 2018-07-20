@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module02</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css"rel="stylesheet">
+
+</head>
+<style>
+    .body-background{
+        height:1300px;
+        margin:0px 40px;
+        width: 548px;
+    }
+    .bottom-part{
+        background:url(./images/02/bg_sample02.gif) no-repeat; height:1300px;
+        width: 528px;
+    }
+    .article-title-font{
+        font-size:40px;
+        color:#aa742e;
+        font-family: "Mryiad Pro","Microsoft YaHei";
+    }
+    .article-title-c{
+        font-size:30px;
+        color:#aa742e;
+    }
+    .row-second {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .article-title{
+       font-family: "Microsoft YaHei", sans-serif;
+        padding-top:40px;
+        padding-bottom: 55px;
+    }
+    .explain-text-class{
+        font-size:16px;
+        color:#4b4949;
+        padding:70px;
+        line-height: 3;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center body-background font-style">
+           <div class="row row-second text-center">
+               <img src="./images/02/img_sample02_banner.jpg"class="img-responsive " />
+               <div class="bottom-part">
+                   <div class="article-title text-center">
+                       <p  class="article-title-c"><span class="article-title-font">Fraises citron vert</span> 莓果青柠</p>
+                   <div class="explain-text-class">
+                       <p>Plaisir citron-framboise
+                           用细腻醇滑的柠檬慕斯 加上酸甜可口的树莓夹心 外层
+                           包裹着诱人的开心果芬 最后配上新鲜美味的草莓 丝丝
+                           美味，缱绻不断
+                       </p>
+                       <p>
+                           Un mariage parfait du rouge et du vert.Un jeu
+                           entre les frases et les pistaches.
+                           (绿色的究竟是青柠还是开心果呢？)
+                           红与绿的极致搭配，开心果与草莓玩味结合。
+                       </p>
+                   </div>
+
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="col-xs-3"></div>
+    </div>
+</div>
+
+<form id="clForm" data-cl-attached="true" data-cl-id="c589535344d943c6a71c642b2f7d2407" action="http://hostaz.xiaoshu.biz/form/c589535344d943c6a71c642b2f7d2407" method="POST"></form>
+<script type="text/javascript" src="http://hostaz.xiaoshu.biz/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("http://hostaz.xiaoshu.biz", "c589535344d943c6a71c642b2f7d2407",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
+</body>
+
+      <script src="//cbeaz.xiaoshu.biz/cbe/collect?tid=1734229266&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+      </script>
+    
+</html>
