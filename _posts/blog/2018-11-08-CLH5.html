@@ -10,12 +10,20 @@
 <script>
 function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1541663751072");}}
 function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1541663730477");}}
+
 </script>
 <script src="http://cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
-<script>
+<!--非微信环境访问-->
+  <script>
   clab_tracker.ready(function(){
-  this.push({pageId:"6f914818456c4ac5b2a85ede5c8cc45f",pageType:"h5"});
+  //this.push({pageId:"6f914818456c4ac5b2a85ede5c8cc45f",pageType:"h5"});
+  //this.track("open_app",{targetId:"6f914818456c4ac5b2a85ede5c8cc45f"});
+  //信环境访问
+  this.push({pageId:"6f914818456c4ac5b2a85ede5c8cc45f", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5"});
   this.track("open_app",{targetId:"6f914818456c4ac5b2a85ede5c8cc45f"});
 });
+   
   </script>  
+ 
+   
 </html>
