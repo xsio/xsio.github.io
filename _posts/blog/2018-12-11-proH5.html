@@ -1,7 +1,7 @@
 <!-- pro环境 H5高级接入专测 -->
 <html>
 <head>
-<title>pro h5</title>
+<title>convertwork登录提醒</title>
 </head>
 <body style="background-color:#9d9d9d">
 <p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
@@ -11,10 +11,16 @@
 function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1544466968729");}}
 function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1544466974549");}}
 </script>
- <script>
-clab_tracker.ready(function(){
+<script src="http://cbe.convertlab.com/cbe/collect?tid=740843171&at=0&h=web"></script>
+  <script> 
+   clab_tracker.ready(function(){
+  //非微信环境打开
   this.push({pageId:"f3fd07d098904b81b52093451f7093dd",pageType:"h5"});
   this.track("open_app",{targetId:"f3fd07d098904b81b52093451f7093dd"});
-});
-  </script> 
+  //微信环境打开
+  //this.push({pageId:"189307baa64f4e0dabd60224166a02d2", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5"});
+  //this.track("open_app",{targetId:"189307baa64f4e0dabd60224166a02d2"});
+ });    
+ </script>  
+   
 </html>
