@@ -1,0 +1,26 @@
+<!-- validation环境 impalaH5高级接入专测 -->
+<html>
+<head>
+<title>impalaH5测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
+</body>
+<script>
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1550661393855");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1550661399972");}}
+</script>
+<script src="http://cbe.convertwork.cn/cbe/collect?tid=1707707909279546996&at=0&h=web"></script>
+  <script> 
+   clab_tracker.ready(function(){
+  //非微信环境打开
+  this.push({pageId:"5cfa950fb61740b8a226b26ea962fcbf",pageType:"h5"});
+  this.track("open_app",{targetId:"5cfa950fb61740b8a226b26ea962fcbf"});
+  //微信环境打开
+  this.push({pageId:"5cfa950fb61740b8a226b26ea962fcbf", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5"});
+  this.track("open_app",{targetId:"5cfa950fb61740b8a226b26ea962fcbf"});
+ });    
+ </script>  
+   
+</html>
