@@ -1,0 +1,27 @@
+<!-- validation环境 小程序埋点 -->
+<html>
+<head>
+<title>小程序埋点测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff">小程序</p>
+<form id="clForm" data-cl-attached="true" data-cl-id="0c835fcc9c784629afc771a47f0e6c46" action="//host.convertwork.cn/form/0c835fcc9c784629afc771a47f0e6c46" method="POST"></form>
+<script type="text/javascript" src="//host.convertwork.cn/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("//host.convertwork.cn", "0c835fcc9c784629afc771a47f0e6c46",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
+ </body>
+     <script src="//cbe.convertwork.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"wechat",identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90"});
+          this.track("mini_program_view", {});
+          //this.track("open_page", {});
+        });
+      </script>
+      <script src="//host.convertwork.cn/js/page_stay.js"></script>
+</html>
