@@ -8,17 +8,20 @@
 <p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
 </body>
 <script>
-//function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1560761214851");}}
-//function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1560761219362");}}
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1567667153564");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1567667157893");}}
 </script>
   <script src="https://app-dmhub.foton.com.cn/_cbe/cbe/collect?tid=1146915672&at=0&h=web"></script>
       <script>
         clab_tracker.ready(function(){
-           this.push({pageId:"a3cca67db28e477f8b5aa54839cd6dd5",pageType:"h5"});
-           this.track("open_app",{targetId:"a3cca67db28e477f8b5aa54839cd6dd5"});
-        });
-       
+          //非微信环境
+           this.push({pageId:"8e4cfcf526954f6e8b81b983c6f949f6",pageType:"h5"});
+           this.track("open_app",{targetId:"8e4cfcf526954f6e8b81b983c6f949f6"});
+          //微信环境
+          this.push({pageId:"8e4cfcf526954f6e8b81b983c6f949f6", identityType: "wechat", identityValue: "os7y1wO2RXGE1IdfLgU20Aocxfog",pageType:"h5"});
+          this.track("open_app",{targetId:"8e4cfcf526954f6e8b81b983c6f949f6"});
+        });   
       </script>
- 
+    <script src="https://host-dmhub.foton.com.cn/js/page_stay.js"></script>
  
 </html>
