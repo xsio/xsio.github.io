@@ -1,0 +1,26 @@
+<!-- v1环境 H5埋点测试文件 -->
+<html>
+<head>
+<title>H5埋点测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>公司信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>个人信息</a></p>
+</body>
+<script>
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1572338434932");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1572338440361");}}
+</script>
+<script src="http://cbev1.convertwork.cn/cbe/collect?tid=1032079986&at=0&h=web"></script>
+  <script> 
+  clab_tracker.ready(function(){
+    //非微信环境打开
+    this.push({pageId:"b9b103dcc5324a2e9b3abd16b82ec28b",pageType:"h5","targetId":"id_1572338434932"});
+    this.track("open_app",{});
+    //微信环境打开
+    this.push({pageId:"b9b103dcc5324a2e9b3abd16b82ec28b", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5","targetId":"id_1572338434932"});
+    this.track("open_app",{});
+  });
+ </script>  
+   
+</html>
