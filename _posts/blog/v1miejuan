@@ -1,0 +1,31 @@
+<!-- v1环境TID：2 公司网站页面 meijuan by-hh -->
+<html>
+<head>
+<title>validation</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff">xuexue validation</p>
+<form id="clForm" data-cl-attached="true" data-cl-id="23d2e025c32a4bee89e19232556da018" action="//hostv1.convertwork.cn/form/23d2e025c32a4bee89e19232556da018" method="POST"></form>
+<script type="text/javascript" src="//hostv1.convertwork.cn/js/forms/form.js"></script>
+<script>
+  _clForm.loadForm("//hostv1.convertwork.cn", "23d2e025c32a4bee89e19232556da018",{
+    formInit: function(){},
+    beforeSubmit: function(){},
+    onSubmit: function(args){}
+  });
+</script>
+
+<div id="_cl_qrcode" style="width:200px"></div>
+          <script>
+            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//https:/qrcode/binding","173faa4f0e22422abb2a973598f81e6b","1238467299","_cl_qrcode");
+          </script>
+ </body>
+   <script src="//cbev1.convertwork.cn/cbe/collect?tid=1032079986&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+       
+      </script>
+</html>
