@@ -1,0 +1,32 @@
+<!-- 欧泊莱 H5埋点测试文件 -->
+<html>
+<head>
+<title>欧泊莱 H5埋点测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
+</body>
+<script>
+    function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1578377955671");}}
+    function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1578377960131");}}
+</script>
+<script src="https://tcbe.aupres.com.cn/cbe/collect?tid=1238467299&at=0&h=web"></script>
+  <script>
+    clab_tracker.ready(function(){
+      //非微信环境打开
+      this.push({pageId:"e2a326e5d4f84098973abf2b56b68c88",pageType:"h5","targetId":"id_157837795567"});
+      this.track("open_app",{targetId:"e2a326e5d4f84098973abf2b56b68c88"});
+    
+      //this.push({pageId:"083e8f5ecc54458296b06d784da1e551",pageType:"h5","targetId":"id_157837795567"});
+      //this.track("open_app",{});
+       //微信环境打开
+      this.push({pageId:"e2a326e5d4f84098973abf2b56b68c88", identityType: "wechat", identityValue: "oSrMMwIRExs7l9BaK-61Grf0D0_Q",pageType:"h5","targetId":"id_1578377955671"});
+      this.track("open_app",{targetId:"e2a326e5d4f84098973abf2b56b68c88"});
+    
+      //this.push({pageId:"083e8f5ecc54458296b06d784da1e551", identityType: "wechat", identityValue: "oSrMMwIRExs7l9BaK-61Grf0D0_Q",pageType:"h5","targetId":"id_1578377955671"});
+      //this.track("open_app",{});
+    });
+</script> 
+<script src="https://scrm-host.bulgari.cn/js/page_stay.js"></script>
+</html>
