@@ -1,4 +1,4 @@
-<!-- 水井坊环境 swellfun高级接入专测 -->
+<!-- 水井坊测试环境 swellfun高级接入专测 -->
 <html>
 <head>
 <title>swellfun测试</title>
@@ -8,30 +8,19 @@
 <p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
 </body>
 <script>
-function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1557253656176");}}
-function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1557284528790");}}
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1578911781361");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1578911787321");}}
 </script>
-  <script src="http://cbe-dmp.swellfun.com/cbe/collect?tid=879527980&at=0&h=web"></script>
+  <script src="http://cbe-dmptest.swellfun.com/cbe/collect?tid=1032079986&at=0&h=web"></script>
   <script> 
-  //clab_tracker.ready(function(){
-    //非微信环境打开
-    //this.push({pageId:"75b8aa35f5ec4b449d99b227a72e08e0",pageType:"h5"});
-    //this.track("open_app",{targetId:"75b8aa35f5ec4b449d99b227a72e08e0"});
-    
-    //莉红新加
+    //测试环境
    clab_tracker.ready(function(){
      //非微信环境下
-      this.push({pageId:"9ef63926ce814f2dad23d9f247ec6667",pageType:"h5"});
-      this.track("open_app",{targetId:"9ef63926ce814f2dad23d9f247ec6667"});    
-     
-     //莉红新加-微信环境下
-      this.push({pageId:"9ef63926ce814f2dad23d9f247ec6667", identityType:"wechat",identityValue:"o6quhwnwtuVnqvcJrr260bFf4nXM",pageType:"h5"});
-      this.track("open_app",{targetId:"9ef63926ce814f2dad23d9f247ec6667"});
-    
-    //微信环境打开
-   // this.push({pageId:"75b8aa35f5ec4b449d99b227a72e08e0", identityType: "wechat", identityValue: "obWnH0ojxPognIXFl3znih9Yw8Is",pageType:"h5"});
-    //this.track("open_app",{targetId:"75b8aa35f5ec4b449d99b227a72e08e0"});
-    
+     this.push({pageId:"c0f6a5c6e8d3463e8d994d937c3ea488",pageType:"h5"});
+      this.track("open_app",{targetId:"c0f6a5c6e8d3463e8d994d937c3ea488"});
+     //微信环境下
+     this.push({pageId:"c0f6a5c6e8d3463e8d994d937c3ea488", identityType: "wechat", identityValue: "626694815710605312",pageType:"h5"});
+      this.track("open_app",{targetId:"c0f6a5c6e8d3463e8d994d937c3ea488"});
       });   
  </script>  
    
