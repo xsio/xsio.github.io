@@ -1,0 +1,28 @@
+<!-- 华为云 H5埋点测试文件 -->
+<html>
+<head>
+<title>华为云 H5埋点测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
+</body>
+<script>
+    function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1580710509760");}}
+    function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1580710518238");}}
+</script>
+<script src="https://cbehw.convertlab.com/cbe/collect?tid=1238467299&at=0&h=web"></script>
+  <script>
+  clab_tracker.ready(function(){
+     //非微信环境打开
+    this.push({pageId:"69cd4a4f840f4ef79bb04f251995ec9e",pageType:"h5","targetId":"id_157837795567"});
+    this.track("open_app",{});
+
+       //微信环境打开
+      this.push({pageId:"69cd4a4f840f4ef79bb04f251995ec9e", identityType: "wechat", identityValue: "oSrMMwIRExs7l9BaK-61Grf0D0_Q",pageType:"h5","targetId":"id_1578377955671"});
+      this.track("open_app",{});
+    });
+});
+</script> 
+<script src="https://hosthw.convertlab.com/js/page_stay.js"></script>
+</html>
