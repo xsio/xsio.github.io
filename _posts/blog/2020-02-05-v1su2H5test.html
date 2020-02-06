@@ -1,0 +1,27 @@
+<!-- v1-su2 H5埋点测试文件 -->
+<html>
+<head>
+<title>v1-su2 H5埋点测试</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
+</body>
+        <script>
+            function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","个人信息","id_1580973008108");}}
+            function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","公司信息","id_1580973012877");}}
+        </script>
+        <script src="http://cbev1.convertwork.cn/cbe/collect?tid=1944539638&at=0&h=web"></script>
+          <script>
+          clab_tracker.ready(function(){
+             //非微信环境打开
+             this.push({pageId:"52e93a531a9b4f8bae65a061edce80fc",pageType:"h5"},"targetId":"id_1580973008108");
+             this.track("open_app",{});
+
+               //微信环境打开
+               this.push({pageId:"52e93a531a9b4f8bae65a061edce80fc", identityType: "wechat", identityValue: "oSrMMwIRExs7l9BaK-61Grf0D0_Q",pageType:"h5"},"targetId":"id_1580973008108"});
+               this.track("open_app",{});                  
+            });
+        </script> 
+        <script src="https://hostv1.convertwork.cn/js/page_stay.js"></script>
+</html>
