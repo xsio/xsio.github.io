@@ -1,0 +1,27 @@
+<!-- validaiton-su2 H5高级接入专测 -->
+<html>
+<head>
+<title>validaiton-su2登录提醒</title>
+</head>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
+</body>
+<script>
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1581501336171");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1581501340893");}}
+</script>
+<script src="https://cbe.convertwork.cn/cbe/collect?tid=2435697812234123488&at=0&h=web"></script>
+  <script> 
+   clab_tracker.ready(function(){
+  //非微信环境打开
+  this.push({pageId:"d7f5bd9c87ed4aa8a1f6f662ba149999",pageType:"h5"});
+  this.track("open_app",{targetId:"d7f5bd9c87ed4aa8a1f6f662ba149999"});
+     
+  //微信环境打开
+  this.push({pageId:"d7f5bd9c87ed4aa8a1f6f662ba149999", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5"});
+  this.track("open_app",{targetId:"d7f5bd9c87ed4aa8a1f6f662ba149999"});
+ });    
+ </script>  
+   
+</html>
