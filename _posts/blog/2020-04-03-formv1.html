@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title>v1环境，表单集成测试</title>
+        <meta name="layout" content="main">
+        <style>
+        </style>
+    </head>
+    <body style="">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="//cbe.convertwork.cn/cbe/collect?tid=1734229266&at=0&h=web"></script>
+	/**<form
+		data-cl-attached="false" data-cl-id="ffbaacc680aa4713bb89078bb122e4f2">
+		姓名:<input type="text" name="name"/>
+		cltoken:<input type="text" name="cltoken"/>
+		<input type="submit" name="" value="提交"/>
+	</form>*/
+  <form data-id="clForm" method="post" class="activity05_form" data-background-color="true" data-background-image="true">
+    data-cl-attached="false" data-cl-id="ffbaacc680aa4713bb89078bb122e4f2">
+    <div class="basics_form">
+      <div class="container">
+          <div id="formFieldSet"><ul>
+            <div class="field-block" style="vertical-align: text-bottom;">
+                <div>
+                  <div class="title-line"><div class="title-text"><p>姓名</p>
+                </div>
+              </div>
+            <div class="desc"><p></p>
+              </div>
+            </div>
+          <div class="field-content">
+          <input type="text" name="name" class="undefined text-input" value="">
+        </div>
+      </div>
+        <div class="field-block" style="vertical-align: text-bottom;">
+          <div>
+        <div class="title-line">
+      <div class="title-text"><p>手机号码</p>
+        </div>
+      </div>
+    <div class="desc"><p></p>
+        </div>
+      </div>
+    <div class="field-content">
+        <input type="tel" name="mobile" placeholder="" class="text-input" id="clMobileField">
+      </div>
+    </div>
+    <div class="field-block" style="vertical-align: text-bottom;">
+      <div>
+        <div class="title-line">
+    <div class="title-text"><p>cltoken</p>
+        </div>
+        </div>
+    <div class="desc"><p>自定义</p>
+        </div>
+        </div>
+    <div class="field-content">
+    <input type="text" name="custom_5462160" class="undefined text-input" value="">
+      </div>
+      </div></ul>
+    <div class="field-block frame-static" style="vertical-align: text-bottom;">
+      <div>
+        </div>
+      <div class="field-content">
+    <div id="clSubmitForm" class="submit-button">提交
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      <div class="scroll-anchor">
+        </div>
+    </div>
+</form>
+    <script>
+        $('form').submit(function(e) {
+            e.preventDefault();
+            var data = $(this).serialize()
+            var utmaVal = document.getElementsByName("cl_context")[0].value
+            var resData = data.split("&cl_context")[0] + "&" + utmaVal
+            console.log("resData is",resData)
+            $.post("https://hostv1.convertwork.cn/page/ffbaacc680aa4713bb89078bb122e4f2",resData,
+                function(data,status){
+                    alert("数据: \n" + data + "\n状态: " + status);
+                })
+        });
+    </script>
+    </body>
+</html>
