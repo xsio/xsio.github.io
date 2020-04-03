@@ -10,7 +10,7 @@
 <body>
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
    
-    <form data-cl-attached="false" data-cl-id="ffbaacc680aa4713bb89078bb122e4f2">
+    <form data-cl-attached="false" data-cl-id="70d7d1ef23aa490599320241fad23a3b">
         姓名:<input type="text" name="name"/>
         手机号:<input type="tel" name="mobile" id="clMobileField">
 	cltoken:<input type="text" name="cltoken"/>
@@ -24,7 +24,7 @@
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("https://hostv1.convertwork.cn/page/ffbaacc680aa4713bb89078bb122e4f2",resData,
+        $.post("https://hostv1.convertwork.cn/page/70d7d1ef23aa490599320241fad23a3b",resData,
           function(data,status){
             alert("数据: \n" + data + "\n状态: " + status);
           })
