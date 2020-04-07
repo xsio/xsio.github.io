@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>master环境表单集成测试</title>
+</head>
+<body>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+   
+    <form data-cl-attached="false" data-cl-id="9fa186f77cb64f1eaa00460cdd1b0b40">
+        姓名:<input type="text" name="name"/>
+        手机号:<input type="tel" name="mobile" id="clMobileField">
+	cltoken:<input type="text" name="cltoken"/>
+        <input type="submit" name="" value="提交"/>
+    </form>
+	
+    <script>
+      $('form').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize()
+        var utmaVal = document.getElementsByName("cl_context")[0].value
+        var resData = data.split("&cl_context")[0] + "&" + utmaVal
+        console.log("resData is",resData)
+        $.post("https://host.dmhub.cn/page/9fa186f77cb64f1eaa00460cdd1b0b40",resData,
+          function(data,status){
+            alert("数据: \n" + data + "\n状态: " + status);
+          })
+      });
+    </script>
+</body>
+  <script src="//cbe.dmhub.cn/cbe/collect?tid=1734229266&at=0&h=web"></script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+      </script>
+</html>
