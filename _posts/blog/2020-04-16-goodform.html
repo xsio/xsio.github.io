@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title color="#FFLL0033">Valuation表单字段多样化测试</title>
+</head>
+<body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script src="//cbe.convertwork.cn/cbe/collect?tid=2435697812234123488&at=0&h=web"> </script>
+</body>
+<form data-cl-attached="false" data-cl-id="43205290619f425282ada8745c4731d5">
+
+    姓名<input type="text" name="name"/><br/>
+    
+    手机号码<input type="text" name="mobile"/><br/>
+    
+    单项选择
+    <select name="custom_474650">
+        <option value ="选项一">选项一</option>
+        <option value ="选项二">选项二</option>
+    </select><br/>
+    
+    多项选择
+    <select multiple="multiple" name="custom_817660">
+        <option value ="选项一">选项一</option>
+        <option value ="选项二">选项一</option>
+    </select><br/>
+    
+    自定义下拉框
+    <select name="custom_65672">
+        <option value ="选项一">选项一</option>
+        <option value ="选项二">选项一</option>
+    </select><br/>
+    
+    数值
+    <input type="number" name="attr4"/><br/>
+
+    省份
+    <input name="province"/><br/>
+
+    日期
+    <input name="attr5"/><br/>
+    
+    评分
+    <input type="number" name="custom_339718"/><br/>
+    
+    分隔符
+    <input name="line_803728"/><br/>
+
+    cltoken:<input type="text" name="cltoken"/>
+    <input type="submit" name="" value="提交"/>
+</form>
+<script>
+    $('form').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize()
+        var utmaVal = document.getElementsByName("cl_context")[0].value
+        var resData = data.split("&cl_context")[0] + "&" + utmaVal
+        console.log("resData is",resData)
+        $.post("https://host.convertwork.cn/page/43205290619f425282ada8745c4731d5",resData,
+            function(data,status){
+                alert("数据: \n" + data + "\n状态: " + status);
+            })
+    });
+</script>
+</html>
