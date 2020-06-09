@@ -1,27 +1,43 @@
   
-<!-- v1环境 公司网站优化后的页面 meimei by-hh -->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>v1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
-<body style="background-color:#9d9d9d">
-<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff">xuexue validation</p>
-<form id="clForm" data-cl-attached="true" data-cl-id="612cbf57e9674d91a5a433dca300d372" action="//hostv1.convertwork.cn/form/612cbf57e9674d91a5a433dca300d372" method="POST"></form>
-<script type="text/javascript" src="//hostv1.convertwork.cn/js/forms/form.js"></script>
-<script>
-  _clForm.loadForm("//hostv1.convertwork.cn", "612cbf57e9674d91a5a433dca300d372",{
-    formInit: function(){},
-    beforeSubmit: function(){},
-    onSubmit: function(args){}
-  });
-</script>
- </body>
-  <script src="//cbev1.convertwork.cn/cbe/collect?tid=1032079986&at=0&h=web"></script>
+<body>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+   
+    <form data-cl-attached="false" data-cl-id="ffbaacc680aa4713bb89078bb122e4f2">
+        姓名:<input type="text" name="name"/>
+        手机号:<input type="tel" name="mobile" id="clMobileField">
+	cltoken:<input type="text" name="cltoken"/>
+        <input type="submit" name="" value="提交"/>
+    </form>
+	
+    <script>
+      $('form').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize()
+        var utmaVal = document.getElementsByName("cl_context")[0].value
+        var resData = data.split("&cl_context")[0] + "&" + utmaVal
+        console.log("resData is",resData)
+        $.post("https://hostv1.convertwork.cn/page/09333c79ed7940f093d5373d8d3cd97f",resData,
+          function(data,status){
+            alert("数据: \n" + data + "\n状态: " + status);
+          })
+      });
+    </script>
+</body>
+  <script src="//cbev1.convertwork.cn/cbe/collect?tid=1944539638&at=0&h=web"></script>
       <script>
         clab_tracker.ready(function(){
-          this.push();
-          this.track();
+          this.push({"tag":"测试HHHH"});
+          //this.push({"pageType":"web"});
+          this.track("open_page", {});
         });
-       
-      </script>
-  </html>
+   </script>
+</html>
