@@ -9,3 +9,5 @@ title: Tracking 测试
 url: http://shuimall.biz
 feed: /atom.xml
 author_info: <a href="http://shuimall.biz/">水磨</a>
+
+theme: jekyll-theme-minimal
