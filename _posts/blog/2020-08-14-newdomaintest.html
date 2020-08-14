@@ -10,7 +10,7 @@
 <body>
     <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
    
-    <form data-cl-attached="false" data-cl-id="ffbaacc680aa4713bb89078bb122e4f2">
+    <form data-cl-attached="false" data-cl-id="dadd43926ff34beab50e6612f84afe88">
         姓名:<input type="text" name="name"/>
         手机号:<input type="tel" name="mobile" id="clMobileField">
 	cltoken:<input type="text" name="cltoken"/>
@@ -24,12 +24,13 @@
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("https://hostv1.convertwork.cn/page/ffbaacc680aa4713bb89078bb122e4f2",resData,
+        $.post("https://hostv1.convertwork.cn/page/dadd43926ff34beab50e6612f84afe88",resData,
           function(data,status){
             alert("数据: \n" + data + "\n状态: " + status);
           })
       });
     </script>
+	
     <div id="_cl_qrcode" style="width:200px"></div>
           <script>
             (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//hostv1.convertwork.cn/qrcode/binding","06c3766040b047a3af28fee12207ce31","1944539638","_cl_qrcode");
