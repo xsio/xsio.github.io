@@ -1,0 +1,52 @@
+<!-- validation环境 表单多字段test -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+   
+    <form data-cl-attached="false" data-cl-id="a93f12b902954e0ca30c14527f4a1dc6">
+        姓名:<input type="text" name="name"/>
+        手机号:<input type="tel" name="mobile" id="clMobileField">
+        文本别删:<input type="text" name="attr25"/>
+        数值别删:<input type="Number" name="attr26"/>
+ 日期别删:<input type="Date" name="attr27"/>
+        时间别删:<input type="Date" name="attr28"/>
+        cltoken:<input type="text" name="cltoken"/>
+        <input type="submit" name="" value="提交"/>
+    </form>
+	
+    <script>
+      $('form').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize()
+        var utmaVal = document.getElementsByName("cl_context")[0].value
+        var resData = data.split("&cl_context")[0] + "&" + utmaVal
+        console.log("resData is",resData)
+        $.post("https://host.convertwork.cn/page/a93f12b902954e0ca30c14527f4a1dc6",resData,
+          function(data,status){
+            alert("数据: \n" + data + "\n状态: " + status);
+          })
+      });
+    </script>
+	<div id="_cl_qrcode" style="width:200px"></div>
+          <script>
+            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//host.convertwork.cn/qrcode/binding","9fbdd064335e44b9973067380d2379d9","2435697812234123488","_cl_qrcode");
+          </script>
+</body>
+<script src="//cbev1.convertwork.cn/cbe/collect?tid=913910045&at=0&h=web"> </script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"tag":"测试HHHH"});
+          //this.push({"pageType":"web"});
+          this.track("open_page", {});
+        });
+   </script>
+</html>
