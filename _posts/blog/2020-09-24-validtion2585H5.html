@@ -1,47 +1,26 @@
-<!doctype html>
-<html lang="en">
+<!-- v1环境 H5埋点测试文件 -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<title>H5埋点测试</title>
 </head>
-<body>
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
-   
-    <form data-cl-attached="false" data-cl-id="51814fb6d1714f2e838d6891556a8649">
-        姓名:<input type="text" name="name"/>
-        手机号:<input type="tel" name="mobile" id="clMobileField">
-	cltoken:<input type="text" name="cltoken"/>
-        <input type="submit" name="" value="提交"/>
-    </form>
-	
-	<div id="_cl_qrcode" style="width:200px"></div>
-          <script>
-            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//hostv1.convertwork.cn/qrcode/binding","e20d0dd39e474ef8a851560fb77975fd","913910045","_cl_qrcode");
-          </script>
-	
-    <script>
-      $('form').submit(function(e) {
-        e.preventDefault();
-        var data = $(this).serialize()
-        var utmaVal = document.getElementsByName("cl_context")[0].value
-        var resData = data.split("&cl_context")[0] + "&" + utmaVal
-        console.log("resData is",resData)
-        $.post("https://hostv1.convertwork.cn/page/51814fb6d1714f2e838d6891556a8649",resData,
-          function(data,status){
-            alert("数据: \n" + data + "\n状态: " + status);
-          })
-      });
-    </script>
+<body style="background-color:#9d9d9d">
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>个人信息</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>公司信息</a></p>
 </body>
-<script src="//cbev1.convertwork.cn/cbe/collect?tid=913910045&at=0&h=web"> </script>
 <script>
-        clab_tracker.ready(function(){
-          this.push({"pageType":"web"});
-          this.track("open_page", {});
-
-        });
-   </script>
+function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1568623063012");}}
+function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1568623068157");}}
+</script>
+<script src="http://cbev1.convertwork.cn/cbe/collect?tid=1032079986&at=0&h=web"></script>
+  <script> 
+  clab_tracker.ready(function(){
+    //非微信环境打开
+    this.push({"pageId":"1199809bf09a4ad4ac00194c61811c9d","pageType":"h5","targetId":"id_1568623063012"});
+    this.track("open_app",{});
+    //微信环境打开
+    this.push({pageId:"1199809bf09a4ad4ac00194c61811c9d", identityType: "wechat", identityValue: "o6quhwnHJxzitnWv7pd59QBJ2v90",pageType:"h5"});
+    this.track("open_app",{targetId:"1199809bf09a4ad4ac00194c61811c9d"});
+  });
+ </script>  
+   
 </html>
