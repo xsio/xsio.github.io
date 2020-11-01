@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <script src="//libs.baidu.com/jquery/2.0.0/jquery.js"></script>
    
     <form data-cl-attached="false" data-cl-id="6423b34b65f04d1bbf95768f37edb1d9">
         姓名:<input type="text" name="name"/>
@@ -29,7 +29,7 @@
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("https://hostv1.convertwork.cn/page/6423b34b65f04d1bbf95768f37edb1d9",resData,
+        $.post("//hostv1.convertwork.cn/page/6423b34b65f04d1bbf95768f37edb1d9",resData,
           function(data,status){
             alert("数据: \n" + data + "\n状态: " + status);
           })
