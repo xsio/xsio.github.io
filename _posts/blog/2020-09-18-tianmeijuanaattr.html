@@ -39,8 +39,7 @@
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
         $.post("//hostv1.convertwork.cn/page/298c49e02018484cbe834b6a63abaecd",resData,
-          function(data,status){
-            alert("数据: \n" + data + "\n状态: " + status);
+          function(data,status){ alert("数据: \n" + data + "\n状态: " + status);
           })
       });
     </script>
@@ -49,8 +48,8 @@
 <script>
         clab_tracker.ready(function(){
          this.push({"pageType":"web"});
-	//  this.push({"tag":"测试HHHH"});
-        this.track("open_page", {});
+	 this.push({"tag":"测试HHHH"});
+         this.track("open_page", {});
 
         });
    </script>
