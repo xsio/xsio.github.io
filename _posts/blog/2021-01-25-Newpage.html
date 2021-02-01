@@ -1,4 +1,3 @@
-
 <!-- v1su2环境  外部网站提交表单 77租户 -->
 
 <!doctype html>
@@ -13,7 +12,7 @@
 <body>
     <script src="//libs.baidu.com/jquery/2.0.0/jquery.js"></script>
    
-    <form data-cl-attached="false" data-cl-id="f7a0f43615fe48f0af735dab806d89fe">
+    <form data-cl-attached="false" data-cl-id="298c49e02018484cbe834b6a63abaecd">
         姓名:<input type="String" name="name"/>
         手机号:<input type="String" name="mobile" id="clMobileField">
         文本:<input type="Text" name="attr1"/>
@@ -27,22 +26,21 @@
     </form>
 	<div id="_cl_qrcode" style="width:200px"></div>
           <script>
-            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//av1.convertwork.cn/qrcode/binding","0084f188da5e4b9387fe59b25ed1beb4","1767803776","_cl_qrcode");
+            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//hostv1.convertwork.cn/qrcode/binding","0b04f309d9554fdb993ff24be507ecad","1767803776","_cl_qrcode");
           </script>
 	
-	
-<script>
+    <script>
       $('form').submit(function(e) {
         e.preventDefault();
         var data = $(this).serialize()
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("//av1.convertwork.cn/h/page/1767803776/ad5f0158fa0e4faaab3eb0c5eb985cb3",resData,
+        $.post("//av1.convertwork.cn/page/298c49e02018484cbe834b6a63abaecd",resData,
           function(data,status){ alert("数据: \n" + data + "\n状态: " + status);
           })
       });
- </script>
+    </script>
 </body>
 <script src="//av1.convertwork.cn/cbe/collect?tid=1767803776&at=0&h=web"> </script>
 <script>
