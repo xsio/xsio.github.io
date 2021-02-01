@@ -38,7 +38,7 @@
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("av1.convertwork.cn/h/page/1767803776/ad5f0158fa0e4faaab3eb0c5eb985cb3",resData,
+        $.post("//av1.convertwork.cn/h/page/1767803776/ad5f0158fa0e4faaab3eb0c5eb985cb3",resData,
           function(data,status){ alert("数据: \n" + data + "\n状态: " + status);
           })
       });
