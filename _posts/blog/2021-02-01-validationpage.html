@@ -1,0 +1,53 @@
+<!-- validation环境 2585租户---表单多字段test -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+   
+    <form data-cl-attached="false" data-cl-id="d280aee47e934341bc7efab8c51b0e6c">
+        姓名:<input type="String" name="name"/>
+        手机号:<input type="String" name="mobile" id="clMobileField">
+        SU2文本:<input type="String" name="attr3"/>
+        SU2数值:<input type="Integer" name="attr4"/>
+        SU2日期:<input type="DateTime" name="attr5"/>
+        SU2时间:<input type="DateTime-local" name="attr6"/>
+        cltoken:<input type="Text" name="cltoken"/>
+        <input type="submit" name="" value="提交"/>
+    </form>
+	
+    <script>
+      $('form').submit(function(e) {
+        e.preventDefault();
+        var data = $(this).serialize()
+        var utmaVal = document.getElementsByName("cl_context")[0].value
+        var resData = data.split("&cl_context")[0] + "&" + utmaVal
+        console.log("resData is",resData)
+        $.post("https://host.convertwork.cn/page/d280aee47e934341bc7efab8c51b0e6c",resData,
+          function(data,status){
+            alert("数据: \n" + data + "\n状态: " + status);
+          })
+      });
+    </script>
+	<div id="_cl_qrcode" style="width:200px"></div>
+          <script>
+            (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//host.convertwork.cn/qrcode/binding","9a887003eca14b5780455bb1e0c2e869","2435697812234123488","_cl_qrcode");
+          </script>
+</body>
+	<script src="//cbe.convertwork.cn/cbe/collect?tid=2435697812234123488&at=0&h=web"> </script>
+      <script>
+        clab_tracker.ready(function(){
+          this.push({"pageType":"web"});
+	        //this.push({"tag":"测试HHHH"});
+          this.track("open_page", {});
+        });
+      </script>
+
+</html>
