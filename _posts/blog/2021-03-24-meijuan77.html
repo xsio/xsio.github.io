@@ -16,6 +16,10 @@ function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2
     </script>
 <script>
   clab_tracker.ready(function(){
+ //非微信环境打开
+  this.push({pageId:"39546410be1542acb4d164d526f7360c",pageType:"h5"});
+  this.track("open_app",{targetId:"39546410be1542acb4d164d526f7360c"});
+//微信环境打开
   this.push({pageId:"39546410be1542acb4d164d526f7360c", identityType: "wechat", identityValue: "oUJBGtwAE_CS27WPNOzLftULkdV4",pageType:"h5","source":"土豆视频","contentName":"来源江浙媒体","source1":"新浪微博1","source2":"新浪微博2","source3":"新浪微博3","source4":"新浪微博4","source5":"新浪微博5","source6":"新浪微博6","source7":"新浪微博7","source8":"新浪微博8"});
   this.track("open_app",{targetId:"39546410be1542acb4d164d526f7360c"});
 });
