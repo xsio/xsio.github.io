@@ -5,22 +5,22 @@
 <title>v1convertwork埋点测试</title>
 </head>
 <body style="background-color:#9d9d9d">
-<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>埋点1</a></p>
-<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>埋点2</a></p> 
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick1()" href=#>test01</a></p>
+<p style="text-align: center;margin-top: 60px;font-size: 35px;font-color: #ffffff"><a onclick="trick2()" href=#>test02</a></p> 
 </body>
 <script>
-    function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点1","id_1618901087066");}}
-    function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","埋点2","id_1618901102011");}}
+    function trick1(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","test01","id_1621319821087");}}
+    function trick2(){if(_cl_tracker){_cl_tracker.track("click_link_in_app","test02","id_1621319838671");}}
 </script>
     <script src="//av1.convertwork.cn/cbe/collect?tid=1767803776&at=0&h=web"></script>
     <script> 
       clab_tracker.ready(function(){
      //非微信环境打开
-      this.push({pageId:"39546410be1542acb4d164d526f7360c",pageType:"h5"});
-      this.track("open_app",{targetId:"39546410be1542acb4d164d526f7360c"});
+      this.push({pageId:"de90873008214c30865255de13d6007c",pageType:"h5"});
+      this.track("open_app",{targetId:"de90873008214c30865255de13d6007c"});
     //微信环境打开
-      this.push({pageId:"39546410be1542acb4d164d526f7360c", identityType: "wechat", identityValue: "oUJBGtzIyjwkV0JTTLvfBFLeM3ug",pageType:"h5");
-      this.track("open_app",{targetId:"39546410be1542acb4d164d526f7360c"});
+      this.push({pageId:"de90873008214c30865255de13d6007c", identityType: "wechat", identityValue: "oUJBGtzIyjwkV0JTTLvfBFLeM3ug",pageType:"h5");
+      this.track("open_app",{targetId:"de90873008214c30865255de13d6007c"});
     });
       </script>
 </html>
