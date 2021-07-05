@@ -12,33 +12,19 @@
 <body>
     <script src="//libs.baidu.com/jquery/2.0.0/jquery.js"></script>
    
-    <form data-cl-attached="false" data-cl-id="298c49e02018484cbe834b6a63abaecd">
-        姓名:<input type="String" name="name"/>
-        手机号:<input type="String" name="mobile" id="clMobileField">
-        文本:<input type="String" name="attr1"/>
-        数值:<input type="Integer" name="attr2"/>
-        日期:<input type="Date" name="attr3"/>
-        时间:<input type="DateTime" name="attr4"/>
+    <form data-cl-attached="false" data-cl-id="2ab4e642c84f434d91b3944b8926fad4">
+       姓名:<input type="String" name="name"/>
+	性别:<input type="Integer" name="gender"/>
+	手机号:<input type="String" name="mobile" id="clMobileField">
 	生日:<input type="DateTime" name="birthday"/>
-	公司员工数:<input type="Integer" name="employeeNumber"/>
+        单项选择1:<input type="String" name="custom_120301"/>
+        单项选择2:<input type="String" name="custom_540340"/>
+        单项选择3:<input type="String" name="custom_922444"/>
+        自定义单行文本:<input type="String" name="custom_134780"/>
         cltoken:<input type="text" name="cltoken"/>
         <input type="submit" name="" value="提交"/>
     </form>
 	
-<!-- 	
-	
-    <form data-cl-attached="false" data-cl-id="298c49e02018484cbe834b6a63abaecd">
-        姓名:<input type="String" name="name"/>
-        手机号:<input type="String" name="mobile" id="clMobileField">
-        文本:<input type="Text" name="attr1"/>
-        数值:<input type="Number" name="attr2"/>
-        日期:<input type="Date" name="attr3"/>
-        时间:<input type="DateTime" name="attr4"/>
-	生日:<input type="Date" name="birthday"/>
-	公司员工数:<input type="Number" name="employeeNumber"/>
-        cltoken:<input type="text" name="cltoken"/>
-        <input type="submit" name="" value="提交"/>
-    </form> -->
 	<div id="_cl_qrcode" style="width:200px"></div>
           <script>
             (function(c,e,f,b){function a(j){var h=j+"=";var g=document.cookie.split(";");for(var k=0;k<g.length;k++){var l=g[k];while(l.charAt(0)==" "){l=l.substring(1)}if(l.indexOf(h)==0){return l.substring(h.length,l.length)}}return""}function d(){var h=a("c__utma");var g=document.createElement("img"); setTimeout(function(){g.setAttribute("style","width: 100%");g.setAttribute("src",c+"?uuid="+e+"&tid="+f+"&utma="+h);document.getElementById(b).appendChild(g)},3000) }if(typeof _cl_tracker != "undefined" && _cl_tracker.ready){_cl_tracker.ready(d)}else{setTimeout(d,1000)}})("//av1.convertwork.cn/h/qrcode/binding","e5aade0f2ff14134905550323d1e2fac","1767803776","_cl_qrcode");
@@ -50,13 +36,14 @@
         var utmaVal = document.getElementsByName("cl_context")[0].value
         var resData = data.split("&cl_context")[0] + "&" + utmaVal
         console.log("resData is",resData)
-        $.post("//av1.convertwork.cn/h/page/298c49e02018484cbe834b6a63abaecd",resData,
+        $.post("//av1.convertwork.cn/h/page/2ab4e642c84f434d91b3944b8926fad4",resData,
           function(data,status){ alert("数据: \n" + data + "\n状态: " + status);
           })
       });
     </script>
 </body>
-      <script src="//av1.convertwork.cn/cbe/collect?tid=1767803776&at=0&h=web"> </script>
+      <script src="https://cbe-cdpuat.michelin.com.cn/cbe/collect?tid=1238467299&at=0&h=web"> </script>
+
 <script>
         clab_tracker.ready(function(){
          this.push({"pageType":"web"});
