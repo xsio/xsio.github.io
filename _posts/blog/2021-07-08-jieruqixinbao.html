@@ -104,6 +104,20 @@
           );
         });
       });
+      
+      function getCompany(keyword) {
+        $.ajax({
+          url: "https://host-test.huiju.cool/qixin/advSearch/eb6e2586c0bd41768382a90539013382",
+          data: JSON.stringify({ keyword }),
+          type: "POST",
+          contentType: "application/json;charset=UTF-8",
+        }).done(function(res){ console.log(res)});
+      }
+      
+      $('input[name="company"]').on('change', function() {
+         getCompany($(this).val());
+      })
+      
     </script>
 
   </body>
